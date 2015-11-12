@@ -1,6 +1,6 @@
-# Composer package repository skeleton
+# Pharover
 
-This is a skeleton project for PHP based Composer package repositories.
+Command line tool to send push notifications through the [Pushover](http://pushover.com) service.
 
 ## Table of contents
 
@@ -53,12 +53,19 @@ You can also add the package using `composer require shakahl/pharover` and later
 
 ## Configuration
 
+You must specify your Pullover API credentials in a `.pharover.json` file.
+
 ```json
 {
     "user-key" : "",
     "token-key" : ""
 }
 ```
+
+The file can be placed:
+* To your HOME directory.
+* To the current working directory.
+* To the directory containing the `pharover.phar`.
 
 ## Usage example
 
