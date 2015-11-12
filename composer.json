@@ -12,7 +12,7 @@
         "notification",
         "push"
     ],
-    "__repositories": [
+    "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/shakahl/pharover.git"
