@@ -11,6 +11,7 @@ This is a skeleton project for PHP based Composer package repositories.
 * [Usage example](#usage-example)
     - [Usage under Windows](#usage-under-windows)
     - [Usage under Linux](#usage-under-linux)
+    - [Building](#building)
 * [Unit testing with PHPUnit](#unit-testing-with-phpunit)
 * [Known Bugs](#known-bugs)
 * [Contributing](#contributing)
@@ -82,7 +83,7 @@ $ vendor/bin/phpunit​.bat
 $ vendor/bin/phpunit
 ```
 
-## Building
+### Building
 
 Pharover can be built with the [Box2](http://box-project.github.io/box2/)
 
