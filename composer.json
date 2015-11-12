@@ -43,13 +43,7 @@
         "psr-4": {
             "App\\": "src/App/",
             "App\\TestCases\\": "tests/"
-        },
-        "__classmap": [
-            "src/Example/ExampleClass.php"
-        ],
-        "__files": [
-            "src/Example/helpers.php"
-        ]
+        }
     },
     "minimum-stability": "dev"
 }
