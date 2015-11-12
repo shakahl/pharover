@@ -1,0 +1,42 @@
+{
+    "alias": "pharover.phar",
+    "chmod": "0755",
+    "compactors": [
+        "Herrera\\Box\\Compactor\\Json",
+        "Herrera\\Box\\Compactor\\Php"
+    ],
+    "directories": [
+    	"bin",
+    	"vendor/composer",
+        "vendor/symfony",
+    	"src"
+    ],
+    "extract": true,
+    "files": [
+        "vendor/autoload.php",
+        "LICENSE"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": [
+                "File",
+                "mikey179",
+                "Net",
+                "phpunit",
+                "phpunit-test-case",
+                "Tester",
+                "Tests",
+                "tests",
+                "yaml"
+            ],
+            "in": "vendor"
+        }
+    ],
+    "main": "bin/pharover",
+    "output": "pharover.phar",
+    "replacements": {
+        "manifest_url": "http://box-project.github.io/box2/manifest.json"
+    },
+    "stub": true
+}
