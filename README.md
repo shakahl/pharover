@@ -1,6 +1,6 @@
 # Pharover
 
-Command line tool to send push notifications through the [Pushover](http://pushover.com) service.
+Command line tool to send push notifications through the [Pushover](https://pushover.net/) service.
 
 ## Table of contents
 
