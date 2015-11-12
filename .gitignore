@@ -9,3 +9,5 @@ vendor/
 # composer.lock
 
 .pharorver.json
+dist/pharover.phar
+bin/phpunit*

@@ -34,7 +34,7 @@
         }
     ],
     "main": "bin/pharover",
-    "output": "pharover.phar",
+    "output": "dist/pharover.phar",
     "replacements": {
         "manifest_url": "http://box-project.github.io/box2/manifest.json"
     },

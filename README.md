@@ -34,32 +34,35 @@ The following versions of PHP are supported by this version.
 
 ## Installation
 
-https://packagist.org/packages/shakahl/skeleton-composer-project
+https://packagist.org/packages/shakahl/pharover
 
-Add `shakahl/skeleton-composer-project` as a requirement to `composer.json`:
+Add `shakahl/pharover` as a requirement to `composer.json`:
 
 ```json
 {
     "require": {
-        "shakahl/skeleton-composer-project": "dev-master"
+        "shakahl/pharover": "dev-master"
     }
 }
 ```
 
 Update your packages with `composer update` or install with `composer install`.
 
-You can also add the package using `composer require shakahl/skeleton-composer-project` and later specifying the version you want (for now, `dev-master` is your best bet).
+You can also add the package using `composer require shakahl/pharover` and later specifying the version you want (for now, `dev-master` is your best bet).
 
 ## Configuration
 
-Not any :)
+```json
+{
+    "user-key" : "",
+    "token-key" : ""
+}
+```
 
 ## Usage example
 
-```php
-<?php
-// Example code for usage...
-?>
+```bash
+$ php pharover.phar notification:send "test message" --title="Pharover" --url="https://github.com/shakahl/pharover" --url-title="Pharover on GitHub"
 ```
 
 ## Unit testing with PHPUnit
@@ -77,6 +80,15 @@ $ vendor/bin/phpunit​.bat
 ### Usage under Linux
 ```shell
 $ vendor/bin/phpunit
+```
+
+## Building
+
+Pharover can be built with the [Box2](http://box-project.github.io/box2/)
+
+```bash
+$ composer install --no-dev
+$ box build
 ```
 
 ## Known Bugs
@@ -102,6 +114,6 @@ You can support [contributors][contributors] of this project individually. Every
 This project is released under the [MIT License][opensource].
 
 [shakahl]: https://github.com/shakahl/
-[contributors]: https://github.com/shakahl/skeleton-composer-project/graphs/contributors
+[contributors]: https://github.com/shakahl/pharover/graphs/contributors
 [opensource]: http://www.opensource.org/licenses/MIT
 [symfony-console]: http://symfony.com/doc/current/components/console/introduction.html
